@@ -67,7 +67,7 @@ public class EjerciciosPropuestos1 {
 	
 	System.out.println("El valor de x es: " +x +" y el valor de y es:" +y);
 	
-	//Calcular un programa que a partir del precio de un producto le aplique un descuento del 15%
+	//Calcular un programa que a parti del precio de un producto le aplique un descuento del 15%
 	//y muestre por pantalla el precio inicial y el precio rebajado.
 	
 	float producto = 100.0f;
