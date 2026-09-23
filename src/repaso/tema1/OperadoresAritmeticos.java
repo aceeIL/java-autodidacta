@@ -1,4 +1,4 @@
-package repaso;
+package repaso.tema1;
 
 public class OperadoresAritmeticos {
 

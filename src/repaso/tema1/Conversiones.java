@@ -1,4 +1,4 @@
-package repaso;
+package repaso.tema1;
 
 public class Conversiones {
 
@@ -48,6 +48,15 @@ public class Conversiones {
 
 		char a1 = 'a';
 		double a2 = a1;
+		
+		
+		String s = "java";
+		s.substring(1,3);
+		
+		System.out.println(s);
+		
+		
+		
 		
 		
 		
