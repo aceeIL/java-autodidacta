@@ -26,7 +26,7 @@ public class BucleForMejorado {
 				v = 0;
 			}
 		}
-		//HAgo un for each para ver si se ha realizado el cambio
+		//Hago un for each para ver si se ha realizado el cambio
 		for(int v : x) {
 			System.out.println(v);
 		}

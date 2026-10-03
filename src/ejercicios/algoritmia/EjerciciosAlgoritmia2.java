@@ -1,4 +1,4 @@
-package ejercicios;
+package ejercicios.algoritmia;
 
 public class EjerciciosAlgoritmia2 {
 
