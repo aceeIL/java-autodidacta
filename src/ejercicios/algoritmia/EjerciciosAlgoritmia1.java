@@ -31,7 +31,6 @@ public class EjerciciosAlgoritmia1 {
 	int mf = 1;
 	int nf = 1;
 	
-	//Bucle que cuenta de 1 al numero de la variable m
 	//cada vez que pasa un bucle se multiplica el numero de la variable m por mf
 	if(m <0) {
 		System.out.println("El valor de m no puede ser negativo");
