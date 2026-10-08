@@ -1,5 +1,6 @@
 package ejercicios.tema4;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class EjerciciosPropuestosMetodos1 {
@@ -62,7 +63,7 @@ public class EjerciciosPropuestosMetodos1 {
 		
 	}
 	
-	//Programar una función que indique si un número es primo o no . 
+	//4.	Programar una función que indique si un número es primo o no . 
 	//Utilizando esta función indicar los números primos que hay en un 
 	//array 2D.
 		
@@ -107,10 +108,32 @@ public class EjerciciosPropuestosMetodos1 {
 	//5.	Programar un método que reciba un String y devuelva el 
 	//número de palabras de dicho String.
 	
+	static int contadorPalabras(String mensaje) {
+		int contador = 0;
+		String[] mensajeSeparado; 
 		
+		mensajeSeparado = mensaje.trim().split(" ");
+		
+		for(String m : mensajeSeparado) {
+			if(!m.isEmpty()) {
+			contador +=1;
+			}
+			
+		}
+		
+		
+		return contador;
+	}
 		
 	//6.	Programar un método que reciba una matriz y devuelva otra 
 	//matriz con los mismos valores pero el doble de capacidad.
+
+	static int[] matrizDuplicada(int ...matriz ) {
+		int[] copia = Arrays.copyOf(matriz, matriz.length*2);
+		
+		return copia;
+	}
+	
 
 
 }//Cierre de clase

@@ -1,5 +1,7 @@
 package ejercicios.tema4;
 
+import java.util.Arrays;
+
 public class Principal {
 
 	
@@ -37,12 +39,12 @@ public class Principal {
 	EjerciciosPropuestosMetodos1.printar(numeros); //Hice una sobre carga en 
 													//printar para arrays
 	
-	
+	System.out.println();
 	//4.	Programar una función que indique si un número es primo o no. 
 	//Utilizando esta función indicar los números primos que hay en un 
 	//array 2D.
 	System.out.println();
-	System.out.println("Identifico numeros primos: \n");
+	System.out.println("4.1.	Identifico numeros primos: \n");
 	//Parte 1:
 	
 	boolean esPrimo = EjerciciosPropuestosMetodos1.esPrimo(7);
@@ -50,7 +52,7 @@ public class Principal {
 	
 	//Parte 2:
 	System.out.println();
-	System.out.println("Muestro los numeros primos de la matriz: \n");
+	System.out.println("4.2.	Muestro los numeros primos de la matriz: \n");
 	int[][] x = {{1,3,5,6},{2,4,7,9}};
 	
 	EjerciciosPropuestosMetodos1.mostrarPrimosMatriz2D(x);
@@ -58,14 +60,26 @@ public class Principal {
 	
 	//5.	Programar un método que reciba un String y devuelva el 
 	//número de palabras de dicho String.
-
+	System.out.println();
+	System.out.println("5.	Muestro cuantas palabras tiene el texto introducido:\n");
+	int palabras = EjerciciosPropuestosMetodos1.contadorPalabras("Buenas tardes a todos");
 	
-	
+	System.out.println("El texto contiene un total de: "+palabras+" palabras.");
 	//6.	Programar un método que reciba una matriz y devuelva otra 
 	//matriz con los mismos valores pero el doble de capacidad.
-
+	System.out.println();
+	System.out.println("6.\tMuestro la matriz con el doble de capacidad:\n");
+	int[] a = {1,4,3,5,4};
+	
+	int[] b = EjerciciosPropuestosMetodos1.matrizDuplicada(a);
+	
+	System.out.println(Arrays.toString(b));
+	
 	
 
+	
+	
+	
 	}
 
 }
