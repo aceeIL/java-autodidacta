@@ -122,6 +122,47 @@ Scanner lector = new Scanner(System.in);
 		MTDNumeros.enseñarMatriz2D(matriz2D);
 		
 		
+		//Ejercicio 8. Media de matriz2D que devuelve String
+		System.out.println();
+		//Hago una matriz y la lleno
+		int matriz3[][] = new int [5][5];
+		MTDNumeros.llenaMatriz(matriz3, 0, 10);
+		
+		//Guardo en un String el resultado:
+		String resultadoFinal = MTDNumeros.mediaMatriz(matriz3);
+		
+		System.out.println(resultadoFinal);
+		
+		//Enseño el array generado
+		System.out.println();
+		MTDNumeros.enseñarMatriz2D(matriz3);
+		
+		
+		
+		//Ejercicio 9. Compruebo si tiene filas repetidas una matriz2D
+		System.out.println();
+		//Hago una matriz con
+		float matrizIguales[][] = {{1,2,3},{1,2,3},{1,4,5}};
+		float matrizNoIguales[][] = {{1,1,2},{1,2,3},{1,4,5}};
+		
+		//Enseño las matrices
+		System.out.println("Matrices generadas de \n");
+		MTDNumeros.enseñarMatriz2D(matrizIguales);
+		System.out.println();
+		MTDNumeros.enseñarMatriz2D(matrizNoIguales);
+		
+		//
+		Boolean seRepite;
+		
+		seRepite = MTDNumeros.repetidos(matrizIguales);
+		
+		System.out.println("La matriz de iguales se repite? "+seRepite);
+		
+		seRepite = MTDNumeros.repetidos(matrizNoIguales);
+		
+		System.out.println("La matriz de no iguales se repite? "+seRepite);
+		
+		
 	}//Cierre de main
 
 }

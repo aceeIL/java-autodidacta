@@ -277,6 +277,16 @@ public class MTDNumeros {
 			System.out.println();
 		}
 	}
+	public static void enseñarMatriz2D(float x[][]) {
+		for(int i = 0;i<x.length;i++) {
+			for(int j=0;j<x[i].length;j++) {
+				System.out.print(x[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+	
+
 	
 	
 	//Programar un método que reciba una matriz 2D de tipo int y devuelva el 
@@ -285,19 +295,64 @@ public class MTDNumeros {
 		//“La media de la fila 2 es: “ …
 		//“La fila con la media más alta es la”...
 	
-	static void mediaMatriz2D(int x[][]) {
-		double suma =0;
-		double longitud =0;
-		for(int i = 0;i<x.length;i++) {
-			for(int j = 0;j<x[i].length;i++) {
-				
+	 static String mediaMatriz(int[][] matriz2D) {
+		String mediaMasAlta = "";
+		String mediaDeCadaFila ="";
+		String cadenaFinal;
+		
+		int contador = 0;
+		double fila = 0;
+		double puntuacionMaxima = 0;
+		double mediaFila = 0;
+		
+		for(int i = 0;i<matriz2D.length;i++) {
+			fila = 0;
+			for(int j=0;j<matriz2D[i].length;j++) {
+				fila += matriz2D[i][j];
+			}//fin for j
+			mediaFila = fila / matriz2D[i].length;
+			mediaDeCadaFila += "La media de la fila "+contador+ " es: "+mediaFila+"\n";
+			contador++;
+			
+			if(mediaFila>puntuacionMaxima) {
+				puntuacionMaxima = mediaFila;
+				mediaMasAlta = "La media mas alta es de: "+puntuacionMaxima;
 			}
 			
-		}
+		}//fin for i
+		cadenaFinal = mediaDeCadaFila + mediaMasAlta;
+		
+		return cadenaFinal;
 	}
 
 
+	 
+	 
+	 //Programar un método que reciba una matriz de 2 dimensiones de tipo 
+	 //float e indique con un booleano si hay filas repetidas , es decir , 
+	 //que almacenen los mismos valores. 
 
+	 static boolean repetidos(float[][] matriz2D) {
+		 boolean sonIguales = true;
+		 
+		 for(int i=0;i<matriz2D.length;i++) {
+			 for(int k =i+1;k<matriz2D.length;k++) {
+				 sonIguales = true;
+				 for(int j=0;j<matriz2D[k].length;j++) {
+					 if(matriz2D[i][j] != matriz2D[k][j]) {
+						 sonIguales = false; 
+						 break;
+					 }
+				 }
+				 if(sonIguales == true) {
+					 return true;
+				 }
+			 }
+		 }
+		 
+		
+		 return false;
+	 }
 	
 	
 
