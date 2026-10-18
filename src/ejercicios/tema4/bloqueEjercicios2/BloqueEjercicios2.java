@@ -148,7 +148,7 @@ public class BloqueEjercicios2 {
 			break;
 			
 			
-			//Apartado 5.	Codificacion de un String segun un algortimo
+			//Apartado 5.	Codificacion de un String segun un algortimo.
 		case 5:
 			boolean salidaRapida5 = false;
 			
