@@ -137,7 +137,7 @@ public class MTDCadenas {
 		//reemplazar a por *
 		cadena = cadena.replace('a', '*');
 		
-		//añadir hash en cada palabra(metodo privado aparte)
+		//añadir hash en cada palabra(metodo privado aparte))
 
 		return "";
 	}
