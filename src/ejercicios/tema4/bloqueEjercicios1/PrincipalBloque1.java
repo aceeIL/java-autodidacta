@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class PrincipalBloque1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub 
 
 		//Ejercicio 1.	Numeros Perfectos:
 		int a = 496;

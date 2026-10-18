@@ -5,7 +5,7 @@ import java.util.*;
 public class MTDNumeros {
 
 	//1.Crea un método que reciba un número int y devuelva true si ese número 
-	//es perfecto. Un número es perfecto si la suma de sus divisores (sin 
+	//es perfecto.  Un número es perfecto si la suma de sus divisores (sin 
 	//contar el propio número) es igual al número. Por ejemplo : 6 es perfecto 
 	//porque es igual a 1 + 2 + 3.
 	
