@@ -138,13 +138,50 @@ public class MTDCadenas {
 		cadena = cadena.replace('a', '*');
 		
 		//añadir hash en cada palabra(metodo privado aparte))
-
-		return "";
+		cadena = añadirHashCode(cadena);
+		
+		//Añadir el numero de caracteres en binario al principio de cada palabra 
+		cadena = añadirBinario(cadena);
+		
+		return cadena;
 	}
 	private static String añadirHashCode(String cadena) {
+		cadena += " ";
+		String cadenaFinal= "";
+		char letraPosActual = ' ';
+		int contador =0;
+		int posEspacio;
 		
+		for(int i = 0;i<cadena.length();i++) {
+			if(cadena.charAt(i) == letraPosActual) {
+				posEspacio = i;
+				String palabra = cadena.substring(contador, posEspacio);
+				int hash = palabra.hashCode();
+				cadenaFinal += palabra + hash + " ";
+				contador = i+1;
+			}
+		}
+			
 		
-		return "";
+		return cadenaFinal;
+	}
+	private static String añadirBinario(String cadena) {
+		String cadenaFinal= "";
+		int posEspacio;
+		char letraPosActual = ' ';
+		int contador =0;
+		
+		for(int i = 0;i<cadena.length();i++) {
+			if(cadena.charAt(i) == letraPosActual) {
+				posEspacio = i;
+				String palabra = cadena.substring(contador, posEspacio);
+				String aBinario = Integer.toBinaryString(palabra.length());
+				cadenaFinal += aBinario + palabra + ' ';
+				contador = i+1;
+			}
+		}
+		
+		return cadenaFinal;
 	}
 
 }

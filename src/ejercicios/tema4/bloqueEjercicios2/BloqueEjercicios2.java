@@ -158,6 +158,9 @@ public class BloqueEjercicios2 {
 					System.out.println("\nNo debes dejar este espacio vacio, vuelva a intentarlo!\n");
 					continue;
 				}
+				String cadenaFinal = MTDCadenas.codificacionDeAlgoritmo(cadenaUsuario).trim();
+				System.out.println("\n"+cadenaFinal+"\n");
+				salidaRapida5 = true;
 				
 			}
 			break;
